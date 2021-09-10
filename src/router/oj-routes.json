@@ -1,0 +1,23 @@
+[
+    {
+        "name": "problems",
+        "pattern": "^/problemset",
+        "routeAlias": "/problems",
+        "view": "Problemset/index",
+        "title": "题库"
+    },
+    {
+        "name": "problem",
+        "pattern": "^/problem(/\\d)",
+        "routeAlias": "/problem",
+        "view": "Problem/index",
+        "title": "题"
+    },
+    {
+        "name": "home",
+        "pattern": "^/home",
+        "routeAlias": "/home",
+        "view": "Home/index",
+        "title": "首页"
+    }
+]

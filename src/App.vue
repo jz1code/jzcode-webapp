@@ -1,10 +1,25 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <page>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </page>
 </template>
+
+<script>
+// @ is an alias to /src
+import Page from '@/components/Page.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    Page
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
